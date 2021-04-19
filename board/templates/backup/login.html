@@ -1,0 +1,50 @@
+{% extends 'base.html' %}}
+{% block content %}
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h1>로그인</h1>
+        </div>
+          <div class="row mt-5">
+              <div class="col-12">
+                  {{error}}
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 text-left">
+           <form method="POST" action="">
+               {% csrf_token %}
+               {% for field in form %}
+               <div class="form-group">
+                   <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                   <input
+                           type="{{ field.field.widget.input_type }}"
+                           class="form-conrtrol"
+                           id="{{ field.id_for_label }}"
+                           placeholder="{{ field.label }}"
+                           name="{{ field.name }}"
+                   />
+               </div>
+               {% if field.errors %}
+               <span style="color: red;">{{ field.errors }}</span>
+               {% endif %}
+               {% endfor %}
+              <!-- <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="email" name="email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password" name="password">
+              </div> -->
+              <button type="login" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}
