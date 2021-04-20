@@ -76,13 +76,25 @@ WSGI_APPLICATION = 'community.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+"""
+DATABASES = {
+     'default': {
         'ENGINE': 'djongo',
         'NAME': 'userdb',
         'CLIENT': {
-            'host': '127.0.0.1:27017'
+            'host': '127.0.0.1',
+            'port': 27017,
+            'username': 'opadak',
+            'password': '1q2w3e',
+            'authSource': 'admin',
+            'authMechanism': 'SCRAM-SHA-1'
         }
     }
-}
+}"""
 
 
 # Password validation

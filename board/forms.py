@@ -33,7 +33,7 @@ class LoginForm(forms.Form):
 
 
 class BoardForm(forms.Form):
-    # 입력 받을 값 두 개
+    # 입력 받을 값
     title = forms.CharField(
         error_messages={'required': '제목을 입력하세요.'},
         max_length=100,
@@ -44,7 +44,8 @@ class BoardForm(forms.Form):
         label='게시글 내용')
     image = forms.ImageField(
         label='첨부 이미지',
-        widget=forms.ClearableFileInput
+        widget=forms.ClearableFileInput,
+        allow_empty_file=True
     )
 
 
