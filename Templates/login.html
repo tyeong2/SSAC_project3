@@ -30,7 +30,13 @@
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                    	<a class="navbar-brand" href="index.html"><b>H</b>ome</a>
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="index.html"><b>H</b>ome</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,79 +44,52 @@
                         <ul class="nav navbar-nav navbar-right cart-menu">
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="guide.html">Guide</a></li>
-		    <li><a href="design.html">Design</a></li>
+                            <li><a href="design.html">Design</a></li>
                             <li><a href="community.html">Community</a></li>
                             <li><a href="login.html">Login</a></li>
-                            <li><a href="#"><span class="login">0</span></a></li>
-                        </ul>
+                            <ul class="nav navbar-nav navbar-right cart-menu">
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                  <img src="../Static/img/user.jpg" width="25" height="25" alt="">
+                                  <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="">회원정보관리</a></li>
+                                    <li><a href="">Logout</a></li>
+                                  </ul>
+                                </li>
+                            </ul>
+                          </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container -->
             </nav>
         </header>
 
-        <section class="contact-section">
+        <section class="news-letter-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="titie-section wow fadeInDown animated ">
-                            <h1>문의사항</h1>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="titie-section wow fadeInDown animated ">
+                      <h1>Login</h1>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft animated">
-                        <div class="left-content">
-                            <h1><span>S</span>how car</h1>
-                            <h3>저희 사이트에 방문해주셔서 감사합니다.</h3>
-                            <p>이용하시다가 문의사항 혹은 건의사항이 있으시면 언제든 편하게 연락주시면 감사하겠습니다.</p>
-                            <div class="contact-info">
-                                <p><b>Email:</b> crulangle@naver.com</p>
-                            </div>
-                        </div>
+              </div>
+              <div class="row">
+                <div class="row subscribe-from">
+                  <form class="form-inline col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1  wow fadeInDown animated">
+                    <div class="form-group">
+                      <input placeholder="Username" class="form-control subscribe" id="Username" type="text"></input>
                     </div>
-                    <div class="col-md-6 wow fadeInRight animated">
-                        <form action="" method="" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Website URL">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Your Message..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <input type="submit" class="contact-submit" value="Send" />
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                  </form>
+                  <form class="form-inline col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1  wow fadeInDown animated">
+                    <div class="form-group">
+                      <input placeholder="Password" class="form-control subscribe" id="Password" type="password"></input>
                     </div>
+                  </form>
+                <div class="login-button-wrap">
+                  <button>Sign in</button>
+                  <button>Sing up</button>
                 </div>
+              </div>
             </div>
         </section>
 

@@ -30,6 +30,12 @@
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
                     	<a class="navbar-brand" href="index.html"><b>H</b>ome</a>
                     </div>
 
@@ -38,166 +44,239 @@
                         <ul class="nav navbar-nav navbar-right cart-menu">
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="guide.html">Guide</a></li>
-		    <li><a href="design.html">Design</a></li>
+                            <li><a href="design.html">Design</a></li>
                             <li><a href="community.html">Community</a></li>
                             <li><a href="login.html">Login</a></li>
-                            <li><a href="#"><span class="login">0</span></a></li>
-                        </ul>
+                            <ul class="nav navbar-nav navbar-right cart-menu">
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                  <img src="../Static/img/user.jpg" width="25" height="25" alt="">
+                                  <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="">회원정보관리</a></li>
+                                    <li><a href="">Logout</a></li>
+                                  </ul>
+                                </li>
+                            </ul>
+                          </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container -->
             </nav>
         </header>
+        <section class="section-gallery">
+          <div class="row">
+            <ul class="space-gallery">
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+            </ul>
 
-        <section class="review-section">
+            <ul class="space-gallery">
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+              <li>
+                <figure class="space-photo">
+                  <img src="../Static/img/sample.png">
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section class="featured-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="titie-section wow fadeInDown animated ">
-                            <h1>프로젝트 소개</h1>
+                            <h1>Community</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="feedback" class="carousel slide feedback" data-ride="feedback">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="carousel-caption">
-                                    <p> 기술의 발전으로 자동차 산업의 패러다임이 변화하고 있습니다.
-기존 설계 – 생산 – 판매 전 과정을 관리하는 방식에서 벗어나 컬러, 차종과 옵션뿐만 아니라 개인의 취향이 함유된 외관 및 인테리어를 다양하게 선택할 수 있는 ‘오픈 프레임 플랫폼’형태로 나아가고 있습니다. 따라서 저희 오파닭은 일반적인 자동차 디자인과 실험적인 디자인이 가미된 Concept Car, Hyper Car, Classic Car 및 가상의 자동차 디자인을 딥러닝을 통해 학습하고, 인공지능 AI가 다양한 자동차 디자인을 3D 모델링으로 제시해줌으로써 고객들이 직접 차량 외관 디자인을 선택해서 추후 생산까지 가능한 웹사이트를 제공하려 합니다. </p>
+                    <div class="col-md-12">
+                        <div class="filter-menu">
+                            <ul class="button-group sort-button-group">
+                                <li class="button active" data-category="all">All</li>
+                                <li class="button" data-category="cat-1">Hatchback</li>
+                                <li class="button" data-category="cat-2">Sedan</li>
+                                <li class="button" data-category="cat-3">Sports car</li>
+                                <li class="button" data-category="cat-4">SUV</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row featured isotope">
+                  <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+                      <div class="product-item">
+                          <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                          <div class="sell-meta">
+                              <a href="test.html" class="sell-item"><i class="pe-7s-like"></i></a>
+                          </div>
+                          <div class="product-title">
+                              <a href="#">
+                                  <h3>Cool lingerie</h3>
+                                  <span>$26</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 cat-2 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
                                 </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$21</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="titie-section wow fadeInDown animated ">
-                            <h1>개발 일정</h1>
+                    <div class="col-md-3 col-sm-1 col-xs-1 cat-1 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$31</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                  <div id="feedback" class="carousel slide feedback" data-ride="feedback">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active wow fadeInDown animated" data-wow-delay="0.3s">
-                          <img src="../Static/img/history.jpg" width="700" height="500" alt="">
+                    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="titie-section wow fadeInDown animated ">
-                            <h1>사진 생성 및 저장 방법</h1>
+                    <div class="col-md-3 col-sm-6 col-xs-12 cat-2 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$26</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                  <div id="feedback" class="carousel slide feedback" data-ride="feedback">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active wow fadeInDown animated" data-wow-delay="0.3s">
-                          <div class="method">
-                            <img src="../Static/img/method.jpg" width="1000" height="500" alt="">
-                          </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$36</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="titie-section wow fadeInDown animated ">
-                            <h1>유의 사항</h1>
+                    <div class="col-md-3 col-sm-6 col-xs-12 cat-1 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                  <div id="feedback" class="carousel slide feedback" data-ride="feedback">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active wow fadeInDown animated" data-wow-delay="0.3s">
-                          <div class="method">
-                            <img src="../Static/img/method.jpg" width="1000" height="500" alt="">
-                          </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+                        <div class="product-item">
+                            <img src="../Static/img/sample.png" class="img-responsive" width="512" height="512" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-like"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$66</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                  </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="search-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="titie-section wow fadeInDown animated ">
-                            <h1>문의사항</h1>
-                        </div>
+                <div class="row subscribe-from">
+                    <div class="col-md-12">
+                        <form class="form-inline col-md-12 wow fadeInDown animated">
+                            <div class="form-group">
+                                <input type="email" class="form-control subscribe" id="email" placeholder="Search...">
+                                <button class="suscribe-btn" ><i class="pe-7s-search"></i></button>
+                            </div>
+                        </form><!-- end /. form -->
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft animated">
-                        <div class="left-content">
-                            <h1><span>S</span>how car</h1>
-                            <h3>저희 사이트에 방문해주셔서 감사합니다.</h3>
-                            <p>이용하시다가 문의사항 혹은 건의사항이 있으시면 언제든 편하게 연락주시면 감사하겠습니다.</p>
-                            <div class="contact-info">
-                                <p><b>Email:</b> crulangle@naver.com</p>
-                            </div>
-                            <div class="social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeInRight animated">
-                        <form action="" method="" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Website URL">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Your Message..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <input type="submit" class="contact-submit" value="Send" />
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </div><!-- end of/. row -->
+            </div><!-- end of /.container -->
+        </section><!-- end of /.news letter section -->
 
         <footer class="footer">
             <div class="container">
